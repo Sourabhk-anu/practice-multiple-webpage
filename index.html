@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>practice_webpage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            body{
+                margin:0;
+            }
+            .nav{
+                display: flex;
+            }
+            nav div{
+                text-align:center;
+            }
+            ul{
+                list-style-type:none;
+                margin:0;
+                padding:0;
+                position: sticky;
+                overflow: hidden;
+            }
+            li{
+                display:block;
+                float:left;
+            }
+            li a{
+                border:2px solid grey;
+                border-radius:5px;
+                text-decoration: none;
+                padding:5px 5px;
+                margin:5px 5px;
+                display:inline-block;
+                position:relative;
+                color:white;
+                background-color: rosybrown;
+            }
+            li a:hover{
+                background-color: white;
+                color: rosybrown;
+            }
+            .img1{
+               
+                border-radius: 50%;
+                border:1px solid white;
+                background-color: #553275;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+            .sec1{
+                background-color: linear-gradient(to bottom, #33ccff 0%, #66ff66 100%);
+            }
+            .fset{
+                margin-top: 100px;
+            }
+            .intro{
+                border:2px solid black;
+                color:#297487;
+                background-color: #632255;
+                border-radius: 5px;
+            }
+            #bg1{
+                background-color: burlywood;
+                margin-top:0;
+            }
+            .contacts{
+                text-align: center;
+                
+            }
+            .form{
+                text-align: center;
+                font-size: 30px;
+                border:2px solid black;
+                margin-left:500px;
+                width:400px;
+                display: block;
+                box-shadow: 10px 10px 5px black;
+                background-color: blanchedalmond;
+            }
+            .input{
+                width:150px;
+                height:30px;
+            }
+            .input:hover{
+                outline:2px inset grey;
+            }
+            .logo{
+                width:50px;
+                height:50px;
+                border-radius: 5px;
+                margin-top: 20px;
+            }
+            #link{
+                display:block;
+            }
+            footer div{
+                text-align: center;
+                background-color: #0c2b5c;
+        </style>
+    </head>
+
+    <body>
+
+        <nav class="nav">
+           <div>
+            <ul>
+                <center>
+                <li><a href="#sec2"><i class="fa fa-picture-o" aria-hidden="true"></i> <b>Gallery</b></a></li>
+                <li><a href="#sec3"><i class="fa fa-phone" aria-hidden="true"></i> <b>Contacts</b></a></li>
+                <li><a href="#sec4"><i class="fa fa-map-marker" aria-hidden="true"></i> <b>Maps</b></a></li>
+                <li><a href="#address"><i class="fa fa-address-card" aria-hidden="true"></i> <b>Address</b></a></li>
+                </center>
+            </ul>
+           </div>
+        </nav>
+        <br><br><br>
+
+        <section class="sec1">
+            <div>
+             <img class="img1" src="https://scontent.fjai3-1.fna.fbcdn.net/v/t1.6435-9/fr/cp0/e15/q65/160039905_1356090608057836_525661604985074671_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=85a577&efg=eyJpIjoidCJ9&_nc_ohc=9ECaYtzoQEgAX9bTTR4&_nc_ht=scontent.fjai3-1.fna&tp=14&oh=f14df4a35796eb0baec26480edb7d13b&oe=60A4CBA5" style="width:400px;height:400px;align-items: center;">
+            </div>
+            <br>
+
+            <div class="intro">
+                <h2 style="color:#63fffa; text-align: center;">ABOUT MYSELF</h2>
+                <p style="text-align: center;font-size: 30px;">Hello everyone, here i'm introducing to myself. I'm a student and completing my b.tech from <strong>TECHNO INDIA SALTLAKE KOLKATA.</strong>
+                    I'm interested in coding and dancing. My hobby is dancing, gymnastic, sketching and playing football at free time. I'm always exited to learn something new and getting explore to myself. 
+                    So, It's all about me that you can know.                
+                </p>
+            </div>
+        </section>
+
+        <section id="sec2">
+            <div id="bg1">
+                <h1 style="border: 2px solid #3f8c91;border-radius: 10px;font-size: 40px;text-align: center;width:500px;margin-left: 300px;background-color: #4f111d;">Here some dance videos</h1>
+                <iframe width="700" height="400" margin-left="20px" float="left" src="https://www.youtube.com/embed/dRHYZyJJVJU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="700" height="400" float="left" src="https://www.youtube.com/embed/XbHj-CntOkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p style="font-size: 20px;">To get more videos, you can also visit my youtube channel <a href="https://www.youtube.com/channel/UCKfc1D7cA3TtNKgCBDWfirQ"><ins>click here</ins></a></p>
+
+            </div>
+        </section>
+
+        <section id="sec3">
+            <div class="contacts">
+                <h1 style="font-size: 50px;"><ins>Contact Me</ins></h1>
+                <p style="font-size: 25px;">To learn dance if you're interested or wanna to ask anything about me with grab a cup of coffee</p>
+            </div>
+            <div class="form">
+                <form>
+                    <label for="first name"><b>First Name</b></label><br>
+                    <input class="input" type="text" placeholder="First Name" value="">
+                    <br>
+                    <label for="first name"><b>Last Name</b></label><br>
+                    <input class="input" type="text" placeholder="Last Name" value=""><br>
+                    <label for="email"><b>Email</b></label><br>
+                    <input class="input" type="email" placeholder="Email" value=""><br>
+                    <label for="password"><b>Password</b></label><br>
+                    <input class="input" type="password" placeholder="Password" value=""><br>
+                    <input type="checkbox" value="">I accept all terms<br><br>
+                    <textarea class="input" cols="20" rows="5" placeholder="Also Comment here your review"></textarea><br><br>
+                    <input class="input" type="submit" placeholder="Email" value="Submit"><br>
+                </form>
+            </div>
+        </section>
+        <br>
+        <section id="sec4">
+            <div>
+                <iframe class="map" style="width:900px;height:500px;margin-left: auto;margin-right: auto;display: block;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15258072.40570261!2d82.75252935!3d20.98801345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1618844698161!5m2!1sen!2sin"
+                    loading="lazy"></iframe>
+            </div>
+        </section>
+        <br><br>
+        <address id="address" style="font-size: 30px;">
+            Visit us at:<br>
+            Dumri, Dist.-Giridih, State-Jharkhand<br>
+            Postal-code:-825106<br>
+            INDIA <span><i class="fa fa-flag" aria-hidden="true"></i></span><br>
+            Contact no.-7004498589<br>
+        </address>
+        <br><br>
+        <hr>
+        <footer id="link">
+            <div>
+                <a href="https://www.instagram.com/sourabhthedancer/"><img class="logo" src="https://parentzone.org.uk/sites/default/files/Instagram%20logo.jpg"></a>
+            <a href="https://touch.facebook.com/profile.php"><img class="logo" src="https://i.pinimg.com/736x/d5/18/ec/d518eceea19f4b1a2ee032ddc634dd7d.jpg"></a>
+            <a href="https://www.linkedin.com/in/sourabh-kumar-53b1151a3/"><img class="logo" src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG1.png"></a>
+            <a href="https://twitter.com/Sk1272883Kumar"><img class="logo" src="https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-4.png"></a>
+            <p style="font-size: 30px;"><i class="fa fa-copyright" aria-hidden="true"></i> Reserve By Sourabh Kumar</p>
+            </div>
+        </footer>
+    </body>
+</html>
